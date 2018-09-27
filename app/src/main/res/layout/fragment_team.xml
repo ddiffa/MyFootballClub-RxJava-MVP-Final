@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.fragment.team.TeamFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false" />
+
+        <Spinner
+            android:id="@+id/spinner_team"
+            style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_view"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_team"
+            tools:listitem="@layout/item_teams" />
+
+        <ProgressBar
+            android:id="@+id/progressBarTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:theme="@style/Progressbar.Blue"/>
+    </RelativeLayout>
+
+</FrameLayout>

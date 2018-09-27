@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Super Scores</string>
+    <string name="match">Past Match</string>
+    <string name="next_match">Next Match</string>
+    <string name="favorite_match">Favorite Match</string>
+    <string name="favorite_team">Favorite Team</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vs">vs</string>
+    <string name="shots">Shots</string>
+    <string name="goal_keeper">Goal Keeper</string>
+    <string name="defender">Defender</string>
+    <string name="midfielders">Midfielders</string>
+    <string name="forwards">Forwards</string>
+    <string name="substitution">Substitution</string>
+    <string name="yellow_cards">Yellow Cards</string>
+    <string name="red_cards">Red Cards</string>
+    <string name="goal_scorer">Goal Scorer</string>
+    <string name="favoriteDB">Favorite</string>
+    <string name="matches">Match</string>
+    <string name="teams">Teams</string>
+    <string name="players">Players</string>
+    <string name="team_overview">Team Overview</string>
+    <string name="player_overview">Player Overview</string>
+    <string name="search_team">Search Team</string>
+    <string name="search">Search</string>
+    <string name="lineups">Lineups</string>
+    <string name="cards">Cards</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height(m)</string>
+    <string name="search_match">Search Match</string>
+    <array name="leagueArray">
+        <item>English Premier League</item>
+        <item>German Bundesliga</item>
+        <item>Italian Serie A</item>
+        <item>French Ligue 1</item>
+        <item>Spanish La Liga</item>
+        <item>Netherlands Eredivisie</item>
+    </array>
+</resources>

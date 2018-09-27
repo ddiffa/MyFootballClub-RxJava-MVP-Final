@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rv_match_favorite" type="id" />
+    <item name="swipeFav" type="id" />
+    <item name="rv_team_favorite" type="id" />
+    <item name="swipeFavTeam" type="id" />
+</resources>

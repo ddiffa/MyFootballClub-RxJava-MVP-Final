@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_player_detail"
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/tv_name_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/img_player_detail"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Barcelona" />
+
+            <TextView
+                android:id="@+id/tv_position_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_player"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@+id/img_player_detail"
+                android:textSize="16sp"
+                tools:text="Barcelona" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_position_player"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@+id/img_player_detail"
+                android:textSize="16sp"
+                tools:text="Barcelona" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_birthday"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/img_player_detail"
+                android:text="@string/weight"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weight"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/img_player_detail"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="@string/weight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/tv_height"
+                android:layout_toEndOf="@+id/tv_weight" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_birthday"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:text="@string/height"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/height"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="@string/height" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/player_overview"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tv_player_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

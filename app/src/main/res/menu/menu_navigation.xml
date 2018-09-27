@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_match"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="@string/matches"/>
+    <item
+        android:id="@+id/menu_team"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="@string/teams"/>
+    <item
+        android:id="@+id/menu_fav"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favoriteDB"/>
+</menu>

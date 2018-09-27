@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.activity.detail.DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/li_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_date_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                tools:text="date" />
+
+            <TextView
+                android:id="@+id/tv_time_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:layout_below="@+id/tv_date_detail"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                tools:text="time" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time_detail"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/img_home_club_detail"
+                    android:layout_width="80dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="ContentDescription"
+                    tools:src="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_club_name_home_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    tools:text="Barcelona" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time_detail"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/img_away_club_detail"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    tools:ignore="ContentDescription"
+                    tools:src="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_club_name_away_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    tools:text="Real Madrid" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_vs_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time_detail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="@string/vs" />
+
+            <TextView
+                android:id="@+id/tv_score_home_club_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time_detail"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/tv_vs_detail"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tv_score_away_club_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time_detail"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/tv_vs_detail"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                tools:text="0" />
+        </RelativeLayout>
+
+
+        <include layout="@layout/layout_statistic_match" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
