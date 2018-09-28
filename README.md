@@ -22,22 +22,22 @@ width="256">&nbsp;&nbsp;&nbsp;
 
 1. Match schedules based on choosen league.
 
- * [x] List of upcoming matches.
- * [x] List of last matches.
- * [x] Match search.
- * [x] Match Detail.
- * [x] Adding reminder for upcoming matches to your calendar.
+ - List of upcoming matches.
+ - List of last matches.
+ - Match search.
+ - Match Detail.
+ - Adding reminder for upcoming matches to your calendar.
 
 2. Teams information based on choosen league.
 
- * [x] List of teams.
- * [x] Team search.
- * [x] Team detail as well as player information detail.
+ - List of teams.
+ - Team search.
+ - Team detail as well as player information detail.
 
 3. Favorite Teams and Matches
- * [x] Insert and delete selected Matches to SQLite
- * [x] Insert and delete selected Teams to SQLite
+ - Insert and delete selected Matches to SQLite
+ - Insert and delete selected Teams to SQLite
 
 4. App Test
- * [x] Unit Test
- * [x] Instrumentation Test
+ - Unit Test
+ - Instrumentation Test
